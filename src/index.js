@@ -3,10 +3,6 @@ import menuTemplate from './templates/templates.hbs';
 import './js/changeTheme.js';
 import './styles.css';
 
-let menu = document.querySelector('js-menu');
-
-function buildMenu(array) {
-    const markup = array.map(post => menuTemplate(post)).join('');
-    menu.insertAdjacentHTML('beforeend', markup);
-}
-buildMenu(menuElement);
+const menu = document.querySelector('.js-menu');
+const markup = menuTemplate(menuElement);
+menu.insertAdjacentHTML('beforeend', markup);
