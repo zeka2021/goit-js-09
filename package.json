@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/zeka2021/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://github.com/zeka2021/goit-js-hw-10-food-service#readme",
+  "homepage": "https://zeka2021/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2"
