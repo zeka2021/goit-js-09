@@ -6,7 +6,9 @@
   "homepage": "https://zeka2021.github.io/goit-js-hw-10-food-service",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html  --public-url /goit-js-hw-10-food-service/"
+    "build": "parcel build src/*.html  --public-url /goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,12 @@
   "bugs": {
     "url": "https://zeka2021.github.io/goit-js-hw-10-food-service/issues"
   },
-  
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
